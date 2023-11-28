@@ -22,11 +22,15 @@ const Hero = () => {
       {/* call to action card  */}
 
       <div className="">
-        <Card className="max-w-xl">
+        <Card className="max-w-lg">
           <CardHeader>
             <CardDescription>New Arrival</CardDescription>
 
-            <CardTitle>Discover Our New Collection</CardTitle>
+            <CardTitle>
+                <h1 className="font-bold text-3xl">Discover our</h1>
+                <h1 className="font-bold text-3xl">New Collection</h1>
+
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="">
