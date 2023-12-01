@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { AOSInit } from "@/components/aos/aosInit";
 
 export const metadata = {
   title: "Furniro",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className="">
         <Navbar />
         {children}

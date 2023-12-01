@@ -5,7 +5,7 @@ import ProductGrid from "@/components/ProductGrid";
 
 export default function Home() {
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <Hero />
       <CompSeprator
         title="Browse the range"

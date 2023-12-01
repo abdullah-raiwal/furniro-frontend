@@ -11,39 +11,41 @@ import {
 
 const Hero = () => {
   return (
-    // backgroung image inside div
-    <div
-      className="container  bg-no-repeat md:bg-contain flex justify-end items-center"
-      style={{
-        backgroundImage: "url('/background-home.png')",
-        height: "700px",
-      }}
-    >
-      {/* call to action card  */}
+    <>
 
-      <div className="">
-        <Card className="max-w-lg">
-          <CardHeader>
-            <CardDescription>New Arrival</CardDescription>
+      <div suppressHydrationWarning
+        className="container  flex items-center justify-end bg-no-repeat md:bg-contain"
+        style={{
+          backgroundImage: "url('/background-home.png')",
+          height: "700px",
+        }}
+      >
+        {/* call to action card  */}
 
-            <CardTitle>
-                <h1 className="font-bold text-3xl">Discover our</h1>
-                <h1 className="font-bold text-3xl">New Collection</h1>
+        <div className="">
+          <Card className="max-w-lg">
+            <CardHeader>
+              <CardDescription>New Arrival</CardDescription>
 
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis.
-            </p>
-          </CardContent>
-          <CardFooter>
-            <Button>Shop Now</Button>
-          </CardFooter>
-        </Card>
+              <CardTitle>
+                <p className="text-3xl font-bold">Discover our</p>
+                <p className="text-3xl font-bold">New Collection</p>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button>Shop Now</Button>
+            </CardFooter>
+          </Card>
+        </div>
       </div>
-    </div>
+    </>
+    // backgroung image inside div
   );
 };
 
