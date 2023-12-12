@@ -29,7 +29,7 @@ const Navbar = () => {
   const NavRef = useRef(null);
 
   return (
-    <div className="container">
+    <div className="">
       {/* navbar for larger screens */}
 
       <div className="flex flex-row items-center justify-between pb-5 pt-2 md:px-10 md:pt-5">

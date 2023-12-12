@@ -2,10 +2,15 @@ import Hero from "@/components/Hero";
 import CompSeprator from "@/components/CompSeprator";
 import CategoryGrid from "@/components/CategoryGrid";
 import ProductGrid from "@/components/ProductGrid";
+import ShowMoreButton from "@/components/ShowMoreButton";
+import InspirationScroller from "@/components/InspirationScroller";
 
 export default function Home() {
   return (
-    <div suppressHydrationWarning>
+    <div
+      suppressHydrationWarning
+      className=""
+    >
       <Hero />
       <CompSeprator
         title="Browse the range"
@@ -15,6 +20,7 @@ export default function Home() {
 
       <CompSeprator title="Our Products" />
       <ProductGrid />
+      <InspirationScroller />
     </div>
   );
 }
